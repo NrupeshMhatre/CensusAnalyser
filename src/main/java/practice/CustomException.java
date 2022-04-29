@@ -8,7 +8,6 @@ public class CustomException extends Exception {
 	        IMPROPER_FILE_NAME, IMPROPER_DELIMITER, IMPROPER_HEADER, IMPROPER_FILE_TYPE, RECORDS_MISMATCH,
 	        INVALID_ENTRYS
 	    }
-
 	    public CustomException(String messages, Message message) {
 	        super(messages);
 	        this.message = message;

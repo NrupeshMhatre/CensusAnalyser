@@ -13,7 +13,7 @@ public class StateCensusAnalyser {
 	     System.out.println( "1. To Display Count or Total No. of records");
 	     System.out.println("2. To Read all data from csv file ");
 		 
-		 String filePathRead = "E:\\IndianStatesCensusReport.csv";
+		 String filePathRead = "C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv";
 	        String fileName = "IndianStateCensusData";
 	        String delimiter =",";
 	        List<String> listName = new ArrayList();

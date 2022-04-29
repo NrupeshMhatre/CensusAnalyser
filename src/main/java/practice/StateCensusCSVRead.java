@@ -32,7 +32,7 @@ private static final String CustomException = null;
 
 	public int readNoOfRecords(String fileName) throws IOException {
 	
-		BufferedReader bufferedReader = new BufferedReader(new FileReader("E:\\IndianStatesCensusReport.csv"));
+		BufferedReader bufferedReader = new BufferedReader(new FileReader("C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv"));
 		String line;
 	     int count = 0;
 	     while((line = bufferedReader.readLine()) != null)

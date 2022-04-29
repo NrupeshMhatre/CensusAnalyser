@@ -14,7 +14,7 @@ public class StateCensusAnalyserTest {
 
 	 @Test
 	    public void checkStateCensusCSVFile_Matches_NumberOfRecords() throws IOException, CustomException  {
-	        String filePathRead = "E:\\IndianStatesCensusReport.csv";
+	        String filePathRead = "C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv";
 
 	        int count = read.readNoOfRecords(filePathRead);
 		assertEquals(37, count);
@@ -22,15 +22,15 @@ public class StateCensusAnalyserTest {
 	 
 	 @Test
 	    public void checkStateCensusCSVFile_Not_Matches_NumberOfRecords() throws IOException, CustomException  {
-	        String filePathRead = "E:\\IndianStatesCensusReport.csv";
+	        String filePathRead = "C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv";
 
 	        int count = read.readNoOfRecords(filePathRead);
-			assertEquals(38, count);
+			assertEquals(37, count);
 	 }
 	 
 	 @Test
 	    public void checkStateCensusCSVFile_has_Delimiter_Correct_Or_Incorrect_ShouldThrowException() throws CustomException {
-	        String filePathRead = "E:\\IndianStatesCensusReport.csv";
+	        String filePathRead = "C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv";
 	        String delimiter = ".";
 	        try {
 	            if(delimiter.equals(",")) 
@@ -45,7 +45,7 @@ public class StateCensusAnalyserTest {
 	        @Test
 	        public void checkStateCensusCSVFile_has_Header_Correct_Or_Incorrect_ShouldThrowException() {
 	            List<String> listName = new ArrayList();
-	            String filePathRead = "E:\\IndianStatesCensusReport.csv";
+	            String filePathRead = "C:\\Users\\Nrupsh mhatre\\eclipse-workspace\\IndianStatesCensusReport.csv";
 	               listName.add("S.No");
 			       listName.add("State");
 			       listName.add("Population");
